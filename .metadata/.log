@@ -435,3 +435,244 @@ org.eclipse.swt.SWTException: Widget is disposed
 
 !ENTRY org.eclipse.jst.server.tomcat.core 4 0 2021-10-12 22:31:31.494
 !MESSAGE /Servers/Tomcat10_Java16-config の Tomcat サーバー構成が欠落しています。エラーについてはサーバーを調べてください。
+
+!ENTRY org.eclipse.core.resources 4 1 2021-10-12 22:37:03.499
+!MESSAGE ローカル変更のリフレッシュ中に問題が発生しました
+!SUBENTRY 1 org.eclipse.core.resources 4 1 2021-10-12 22:37:03.499
+!MESSAGE ローカル変更のリフレッシュ中に問題が発生しました
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: ローカルのファイル・システムでリソースをリフレッシュ中にエラーが発生しました。
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:981)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:961)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1562)
+	at org.eclipse.core.internal.resources.File.refreshLocal(File.java:314)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:166)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: 'test3' のプロジェクト記述ファイル (.project) がありません。 このファイルには、プロジェクトに関する重要な情報が含まれています。 このファイルが復元されるまで、プロジェクトは正しく機能しません。
+java.lang.Exception: 'test3' のプロジェクト記述ファイル (.project) がありません。 このファイルには、プロジェクトに関する重要な情報が含まれています。 このファイルが復元されるまで、プロジェクトは正しく機能しません。
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.Project.updateDescription(Project.java:1346)
+	at org.eclipse.core.internal.resources.File.updateMetadataFiles(File.java:376)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:291)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:119)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:978)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:961)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1562)
+	at org.eclipse.core.internal.resources.File.refreshLocal(File.java:314)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:166)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.core.resources 4 271 2021-10-12 22:37:03.499
+!MESSAGE ローカルのファイル・システムでリソースをリフレッシュ中にエラーが発生しました。
+!SUBENTRY 3 org.eclipse.core.resources 4 567 2021-10-12 22:37:03.499
+!MESSAGE 'test3' のプロジェクト記述ファイル (.project) がありません。 このファイルには、プロジェクトに関する重要な情報が含まれています。 このファイルが復元されるまで、プロジェクトは正しく機能しません。
+!STACK 0
+java.lang.Exception: 'test3' のプロジェクト記述ファイル (.project) がありません。 このファイルには、プロジェクトに関する重要な情報が含まれています。 このファイルが復元されるまで、プロジェクトは正しく機能しません。
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.Project.updateDescription(Project.java:1346)
+	at org.eclipse.core.internal.resources.File.updateMetadataFiles(File.java:376)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:291)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:119)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:978)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:961)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1562)
+	at org.eclipse.core.internal.resources.File.refreshLocal(File.java:314)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:166)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.ide 4 4 2021-10-12 22:37:16.016
+!MESSAGE ワークスペースの保存の問題
+
+!ENTRY org.eclipse.ui.ide 2 1 2021-10-12 22:37:16.016
+!MESSAGE ワークベンチの状態を保存中に問題が発生しました。
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2021-10-12 22:37:16.016
+!MESSAGE 'test2' のプロジェクト記述ファイル (.project) がありませんでした。 このファイルには、プロジェクトに関する重要な情報が含まれています。 新しいプロジェクト記述ファイルが作成されましたが、プロジェクトに関する情報の一部が破損している可能性があります。
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2021-10-12 22:37:16.016
+!MESSAGE 'test3' のプロジェクト記述ファイル (.project) がありませんでした。 このファイルには、プロジェクトに関する重要な情報が含まれています。 新しいプロジェクト記述ファイルが作成されましたが、プロジェクトに関する情報の一部が破損している可能性があります。
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-10-12 22:37:18.399
+!MESSAGE ワークスペースは、このセッションで変更が保存されずに終了します。
+!SESSION 2021-10-12 22:37:21.550 -----------------------------------------------
+eclipse.buildId=4.21.0.I20210906-0500
+java.version=17-beta
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/sakku14/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/sakku14/.eclipse_keyring
+
+!ENTRY org.eclipse.jface 2 0 2021-10-12 22:37:30.244
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-10-12 22:37:30.244
+!MESSAGE A conflict occurred for COMMAND+CTRL+F:
+Binding(COMMAND+CTRL+F,
+	ParameterizedCommand(Command(com.xored.glance.commands.open,Glance を開く,
+		Glance 検索パネルを開く,
+		Category(com.xored.glance.ui.commands,Glance,Glance 検索コマンド,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@20923380,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,cocoa,system)
+Binding(COMMAND+CTRL+F,
+	ParameterizedCommand(Command(org.eclipse.ui.window.fullscreenmode,全画面の切り替え,
+		全画面と通常のウィンドウを切り替えます,
+		Category(org.eclipse.ui.category.window,ウィンドウ,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5b2c41f9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,cocoa,system)
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-10-12 22:37:30.609
+!MESSAGE ワークスペースは以前のセッションで変更が保存されずに終了しました； 変更を回復するためにワークスペースをリフレッシュ中です。
+
+!ENTRY org.eclipse.jface 2 0 2021-10-12 22:37:31.273
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-10-12 22:37:31.273
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,プロパティーの表示,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3152d449,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,選択されたローカル・ターミナルを開く,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,ターミナル・コマンド,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2f95ce11,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-10-12 22:37:31.273
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,型を開く,
+		型を Java エディターで開きます,
+		Category(org.eclipse.ui.category.navigate,ナビゲート,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2f349170,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,ワークスペース内のシンボルにジャンプ,
+		,
+		Category(org.eclipse.lsp4e.category,言語サーバー,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@15ec3c0c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-10-12 22:37:31.273
+!MESSAGE A conflict occurred for COMMAND+SHIFT+-:
+Binding(COMMAND+SHIFT+-,
+	ParameterizedCommand(Command(org.eclipse.ui.window.splitEditor,エディター分割の切り替え,
+		現在のアクティブなエディターを分割または結合します。,
+		Category(org.eclipse.ui.category.window,ウィンドウ,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@323b5264,
+		[Parameter(Splitter.isHorizontal,向き,null,false)],,true),[org.eclipse.core.commands.Parameterization@6102fa90]),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,ja,,system)
+Binding(COMMAND+SHIFT+-,
+	ParameterizedCommand(Command(org.eclipse.ui.window.splitEditor,エディター分割の切り替え,
+		現在のアクティブなエディターを分割または結合します。,
+		Category(org.eclipse.ui.category.window,ウィンドウ,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@323b5264,
+		[Parameter(Splitter.isHorizontal,向き,null,false)],,true),[org.eclipse.core.commands.Parameterization@6102fa90]),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.ui.navigator 2 0 2021-10-12 22:37:32.978
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui.navigator 2 0 2021-10-12 22:37:32.978
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui 2 2 2021-10-12 22:37:41.077
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-12 22:39:34.218
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-12 22:39:34.219
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@6bc6cbc1[org.springframework.tooling.boot.ls:1.28.0.202109130547(id=1011)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-12 22:39:34.220
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-12 22:39:34.234
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-12 22:39:36.271
+!MESSAGE 起動から初期化までの Boot LS 起動時間: 2047ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-12 22:39:36.346
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.goiVZSzkisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-12 22:39:36.348
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-12 22:39:36.349
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-12 22:39:36.350
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-12 22:39:36.350
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.goiVZSzk => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-12 22:39:36.350
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-12 22:39:36.352
+!MESSAGE classpath=35 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-12 22:39:36.352
+!MESSAGE buffering callback sts4.classpath.goiVZSzk example false 35
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-12 22:39:36.353
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-12 22:39:36.353
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-12 22:39:36.353
+!MESSAGE buffering callback sts4.classpath.goiVZSzk test false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-12 22:39:36.354
+!MESSAGE executing callback sts4.classpath.goiVZSzk 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-12 22:39:36.602
+!MESSAGE executing callback sts4.classpath.goiVZSzk SUCCESS [done]
+
+!ENTRY org.eclipse.jst.server.tomcat.core 2 0 2021-10-12 22:40:43.600
+!MESSAGE Tomcat バージョン 6.0 は、J2EE 1.2、1.3、1.4、および Java EE 5 Web モジュールのみをサポートしています
+
+!ENTRY org.eclipse.jst.server.tomcat.core 2 0 2021-10-12 22:40:43.601
+!MESSAGE Tomcat version 7.0 only supports J2EE 1.2, 1.3, 1.4, and Java EE 5 and 6 Web modules
+
+!ENTRY org.eclipse.jst.server.tomcat.core 2 0 2021-10-12 22:40:43.603
+!MESSAGE Tomcat version 8.5 only supports J2EE 1.2, 1.3, 1.4, and Java EE 5, 6, and 7 Web modules
+
+!ENTRY org.eclipse.jst.server.tomcat.core 2 0 2021-10-12 22:40:43.604
+!MESSAGE Tomcat version 9.0 only supports J2EE 1.2, 1.3, 1.4, and Java EE 5, 6, 7, and 8 Web modules
+
+!ENTRY org.eclipse.jst.server.tomcat.core 2 0 2021-10-12 22:40:43.606
+!MESSAGE Tomcat version 9.0 only supports J2EE 1.2, 1.3, 1.4, and Java EE 5, 6, 7, and 8 Web modules
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-12 22:40:43.740
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-12 22:40:43.740
+!MESSAGE buffering callback sts4.classpath.goiVZSzk example true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-12 22:40:43.741
+!MESSAGE executing callback sts4.classpath.goiVZSzk 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-12 22:40:43.743
+!MESSAGE executing callback sts4.classpath.goiVZSzk SUCCESS [done]
